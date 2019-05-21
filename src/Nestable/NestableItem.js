@@ -44,7 +44,8 @@ class NestableItem extends Component {
         "nestable-item" + (isCopy ? '-copy' : ''),
         "nestable-item" + (isCopy ? '-copy' : '') + '-' + item.id,
         {
-          'is-dragging': isDragging
+          'is-dragging': isDragging,
+          'is-hidden': !item.visible
         }
       )
     };
